@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "955960815374",
+    "firebase_url": "https://burnedjangwon.firebaseio.com",
+    "project_id": "burnedjangwon",
+    "storage_bucket": "burnedjangwon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955960815374:android:d733b6d184226acda5315f",
+        "android_client_info": {
+          "package_name": "com.example.burnedjangwon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955960815374-ei4m92fmtv22oscc05hk3pae8tt57hs8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHpld9kk0W_m5qEe6LoZsgPG9KxIVdr3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955960815374-ei4m92fmtv22oscc05hk3pae8tt57hs8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
