@@ -14,6 +14,9 @@ import com.google.firebase.auth.FirebaseUser;
 import static com.example.burnedjangwon.Util.showToast;
 
 public class MainActivity extends AppCompatActivity {
+
+    private BackPressCloseHandler backPressCloseHandler;
+
     Button login;
     Button logout;
     Button signup;
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        backPressCloseHandler = new BackPressCloseHandler(this);
 
         login = findViewById(R.id.loginButton);
         logout = findViewById(R.id.logoutButton);
@@ -36,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
 
         //init();
     }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        backPressCloseHandler.onBackPressed();
+    }
+
 
     @Override
     protected void onStart() {
