@@ -1,5 +1,6 @@
 package com.example.burnedjangwon;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -55,7 +56,7 @@ public class LoginActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
                                 FirebaseUser user = mAuth.getCurrentUser();
                                 showToast(LoginActivity.this, "로그인에 성공하였습니다.");
-                                //myStartActivity(MainActivity.class);
+                                myStartActivity(MainActivity.class);
                             } else {
                                 if (task.getException() != null) {
                                     showToast(LoginActivity.this, task.getException().toString());
@@ -66,6 +67,12 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             showToast(LoginActivity.this, "이메일 또는 비밀번호를 입력해 주세요.");
         }
+    }
+
+    private void myStartActivity(Class c) {
+        Intent intent = new Intent(this, c);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
 }
