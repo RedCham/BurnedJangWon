@@ -6,14 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1"
-    >
+    android:weightSum="1">
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_view"
         android:scrollbars="vertical"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,14 +22,9 @@
         android:orientation="horizontal"
         android:weightSum="2">
         <EditText
-            android:id="@+id/IDEdit"
-            android:layout_width="15dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <EditText
             android:inputType="number"
             android:id="@+id/pointEdit"
-            android:layout_width="15dp"
+            android:layout_width="30dp"
             android:layout_height="match_parent"
             android:layout_weight="1"/>
         <Button

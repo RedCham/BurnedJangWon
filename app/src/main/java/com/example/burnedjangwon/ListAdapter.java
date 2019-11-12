@@ -1,6 +1,7 @@
 package com.example.burnedjangwon;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,12 +24,14 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
         // each data item is just a string in this case
         public TextView TextView_nickname;
         public TextView TextView_msg;
+        public TextView TextView_order;
         public View rootView;
 
         public MyViewHolder(View v) {
             super(v);
             TextView_nickname = v.findViewById(R.id.IDText);
             TextView_msg = v.findViewById(R.id.pointText);
+            TextView_order = v.findViewById(R.id.orderText);
             rootView = v;
 
         }
@@ -43,8 +46,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
 
     // Create new views (invoked by the layout manager)
     @Override
-    public ListAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent,
-                                                       int viewType) {
+    public ListAdapter.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view
         LinearLayout v = (LinearLayout) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item, parent, false);
@@ -62,14 +64,17 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
 
         holder.TextView_nickname.setText(chat.getID());
         holder.TextView_msg.setText(chat.getPoint());
+        holder.TextView_order.setText(Integer.toString(position+1));
 
         if(chat.getID().equals(this.id)) {
-            holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
-            holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            //holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            //holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
+            holder.TextView_nickname.setTextColor(Color.rgb(200,0,0));
         }
         else {
-            holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
-            holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+            //holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+            //holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
+            holder.TextView_nickname.setTextColor(Color.rgb(180,180,180));
         }
 
     }

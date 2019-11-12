@@ -1,8 +1,8 @@
 package com.example.burnedjangwon;
 
-public class Point {
+public class Point implements Comparable<Point> {
     private String id;
-    private int point;
+    private String point;
 
     public String getID() {
         return id;
@@ -12,11 +12,20 @@ public class Point {
         this.id = id;
     }
 
-    public int getPoint() {
+    public String getPoint() {
         return point;
     }
 
-    public void setPoint(int point) {
+    public void setPoint(String point) {
         this.point = point;
+    }
+
+    public  int getPointInt() {
+        return Integer.parseInt(point);
+    }
+
+    @Override
+    public int compareTo(Point p) {
+        return this.point.compareTo(p.point);
     }
 }

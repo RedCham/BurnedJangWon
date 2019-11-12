@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true">
     <TextView
-        android:text="TextView"
+        android:textSize="30sp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/orderText"
+        android:paddingTop="5dp"
+        />
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/IDText"
-        android:textSize="24sp"
-        android:textStyle="normal|bold" />
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/IDText"
+            android:textSize="12sp"
+            android:textStyle="normal|bold" />
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/pointText" />
+        <TextView
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pointText" />
+    </LinearLayout>
 
 </LinearLayout>
