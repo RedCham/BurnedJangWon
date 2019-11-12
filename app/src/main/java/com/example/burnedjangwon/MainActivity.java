@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     Button login;
     Button logout;
     Button signup;
+    Button rank;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,10 +32,13 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.loginButton);
         logout = findViewById(R.id.logoutButton);
         signup = findViewById(R.id.signUpButton);
+        rank = findViewById(R.id.rankingButton);
 
         login.setOnClickListener(onClickListener);
         logout.setOnClickListener(onClickListener);
         signup.setOnClickListener(onClickListener);
+        rank.setOnClickListener(onClickListener);
+
         findViewById(R.id.startButton).setOnClickListener(onClickListener);
         findViewById(R.id.signUpButton).setOnClickListener(onClickListener);
 
@@ -88,7 +92,8 @@ public class MainActivity extends AppCompatActivity {
                     myStartActivity(LoginActivity.class);
                     break;
                 case R.id.rankingButton :
-                    showToast(MainActivity.this, "미구현");
+                    myStartActivity(RankingActivity.class);
+                    //showToast(MainActivity.this, "미구현");
                     break;
                 case R.id.signUpButton :
                     myStartActivity(SignUpActivity.class);
@@ -99,7 +104,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void myStartActivity(Class c) {
         Intent intent = new Intent(this, c);
-        startActivityForResult(intent, 1);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
     public static void restartActivity(Activity act){
