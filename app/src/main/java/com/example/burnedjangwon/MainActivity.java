@@ -7,7 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -17,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
 
     private BackPressCloseHandler backPressCloseHandler;
 
-    Button login;
-    Button logout;
-    Button signup;
-    Button rank;
+    ImageView main_title;
+    ImageButton login;
+    ImageButton logout;
+    ImageButton signup;
+    ImageButton rank;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         backPressCloseHandler = new BackPressCloseHandler(this);
+
+        ImageView main_title = (ImageView)findViewById(R.id.mainTitle);
+        Glide.with(this).load(R.drawable.maintitle).into(main_title);
 
         login = findViewById(R.id.loginButton);
         logout = findViewById(R.id.logoutButton);

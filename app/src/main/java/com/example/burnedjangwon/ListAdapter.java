@@ -74,7 +74,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
         else {
             //holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
             //holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
-            holder.TextView_nickname.setTextColor(Color.rgb(180,180,180));
+            holder.TextView_nickname.setTextColor(Color.rgb(20,20,20));
+
         }
 
     }

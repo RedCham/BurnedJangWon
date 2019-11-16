@@ -7,37 +7,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@drawable/background">
 
-    <Button
+    <ImageView
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp" />
+
+    <ImageButton
         android:id="@+id/startButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="게임시작" />
+        android:background="@drawable/startbutton"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/loginButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="로그인" />
+        android:background="@drawable/loginbutton" />
 
-    <Button
+    <ImageButton
         android:id="@+id/logoutButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        android:text="로그아웃" />
+        android:background="@drawable/logoutbutton"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/signUpButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="회원가입" />
+        android:background="@drawable/signupbutton" />
 
-    <Button
+    <ImageButton
         android:id="@+id/rankingButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="랭킹" />
+        android:background="@drawable/rankingbutton" />
 
 </LinearLayout>

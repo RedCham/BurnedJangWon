@@ -113,7 +113,6 @@ public class RankingActivity extends AppCompatActivity {
                 Log.w("RankingActivity", "loadPost:onCancelled", databaseError.toException());
             }
         });
-
     }
 }
 
