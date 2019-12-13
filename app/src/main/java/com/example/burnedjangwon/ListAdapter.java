@@ -65,6 +65,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
         holder.TextView_nickname.setText(chat.getID());
         holder.TextView_msg.setText(chat.getPoint());
         holder.TextView_order.setText(Integer.toString(position+1));
+        holder.TextView_order.setTextColor(Color.rgb(200,200,200));
+        holder.TextView_msg.setTextColor(Color.rgb(200,200,200));
 
         if(chat.getID().equals(this.id)) {
             //holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_END);
@@ -74,7 +76,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
         else {
             //holder.TextView_msg.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
             //holder.TextView_nickname.setTextAlignment(View.TEXT_ALIGNMENT_TEXT_START);
-            holder.TextView_nickname.setTextColor(Color.rgb(20,20,20));
+            holder.TextView_nickname.setTextColor(Color.rgb(200,200,200));
 
         }
 
