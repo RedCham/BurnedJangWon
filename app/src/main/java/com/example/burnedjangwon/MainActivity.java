@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     Timer mTimer;
     TimerTask mTimerTask0, mTimerTask1, mTimerTask2, mTimerTask3;
 
-    boolean firstPlay = false;
+    boolean firstPlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        SharedPreferences settings = getSharedPreferences( "myPref" , MODE_PRIVATE );
+        firstPlay = settings.getBoolean("firstplay", false);
         final Animation alpha = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
         final Animation trans = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.translate);
 
@@ -91,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         lMain.setBackgroundResource(R.drawable.darkbackground);
+                        loading.setVisibility(View.VISIBLE);
                         loading.setImageResource(R.drawable.loading_text1);
                         loading.startAnimation(alpha);
                         start.setVisibility(View.INVISIBLE);
@@ -178,6 +182,16 @@ public class MainActivity extends AppCompatActivity {
                 signup.setVisibility(View.GONE);
             }
         }
+
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences settings = getSharedPreferences( "myPref" , MODE_PRIVATE );
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putBoolean("firstplay", firstPlay);
+        editor.apply();
 
     }
 

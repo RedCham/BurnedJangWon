@@ -40,7 +40,7 @@ public class MusicService extends Service {
     @Override
     public void onDestroy() {
         Log.d(TAG, "onDestroy()");
-        Toast.makeText(this, "MusicService 중지", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "MusicService 중지", Toast.LENGTH_SHORT).show();
 
         // MediaPlayer play 중지
         player.stop();
