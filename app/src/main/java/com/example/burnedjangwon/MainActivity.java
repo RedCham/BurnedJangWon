@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     Timer mTimer;
     TimerTask mTimerTask0, mTimerTask1, mTimerTask2, mTimerTask3;
 
+    boolean firstPlay = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,6 +67,8 @@ public class MainActivity extends AppCompatActivity {
 
         mTimer = new Timer();
         //init();
+        Intent in = new Intent(MainActivity.this, MusicService.class);
+        startService(in);
     }
 
     @Override
@@ -153,11 +157,34 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         };
-        mTimer.schedule(mTimerTask0, 0);
-        mTimer.schedule(mTimerTask1, 5000);
-        mTimer.schedule(mTimerTask2, 12000);
-        mTimer.schedule(mTimerTask3, 14000);
 
+        if (!firstPlay) {
+            mTimer.schedule(mTimerTask0, 0);
+            mTimer.schedule(mTimerTask1, 5000);
+            mTimer.schedule(mTimerTask2, 12000);
+            mTimer.schedule(mTimerTask3, 14000);
+            firstPlay = true;
+        }
+        else {
+            FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+            if (firebaseUser == null) {
+                logout.setVisibility(View.GONE);
+                login.setVisibility(View.VISIBLE);
+                signup.setVisibility(View.VISIBLE);
+            }
+            else {
+                login.setVisibility(View.GONE);
+                logout.setVisibility(View.VISIBLE);
+                signup.setVisibility(View.GONE);
+            }
+        }
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        stopService(new Intent(this, MusicService.class));
     }
 
     private void init() {
