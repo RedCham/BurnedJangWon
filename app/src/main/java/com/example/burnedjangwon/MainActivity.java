@@ -6,18 +6,20 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
+import com.NAJangwon.Kkamang.UnityPlayerActivity;
 import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -40,13 +42,21 @@ public class MainActivity extends AppCompatActivity {
     Timer mTimer;
     TimerTask mTimerTask0, mTimerTask1, mTimerTask2, mTimerTask3;
 
+    private DatabaseReference myRef;
+
+    long startTime, endTime;
+    boolean endGame;
+
     boolean firstPlay;
+
+    private String nick = "default";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.e("main", "onCreate");
         backPressCloseHandler = new BackPressCloseHandler(this);
 
         lMain = findViewById(R.id.main_layout);
@@ -66,7 +76,14 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.startButton).setOnClickListener(onClickListener);
         findViewById(R.id.signUpButton).setOnClickListener(onClickListener);
 
+        // Write a message to the database
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        myRef = database.getReference();
+
         mTimer = new Timer();
+
+        endGame = false;
+
         //init();
         Intent in = new Intent(MainActivity.this, MusicService.class);
         startService(in);
@@ -82,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        Log.e("main", "onStart");
         SharedPreferences settings = getSharedPreferences( "myPref" , MODE_PRIVATE );
         firstPlay = settings.getBoolean("firstplay", false);
         final Animation alpha = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.alpha);
@@ -181,12 +199,44 @@ public class MainActivity extends AppCompatActivity {
                 logout.setVisibility(View.VISIBLE);
                 signup.setVisibility(View.GONE);
             }
+            mainTitle.setBackgroundResource(0x00000000);
+            Glide.with(MainActivity.this).load(R.drawable.maintitle).into(mainTitle);
         }
 
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+        Log.e("main", "onResume");
+        if(endGame) {
+            endTime = System.currentTimeMillis();
+            Log.e("endTime", Long.toString(endTime));
+//            Log.e("score1", Long.toString(endTime - startTime));
+//            Log.e("score2", Long.toString((endTime - startTime) / 100000));
+//            Log.e("score3", Long.toString(Math.round((endTime - startTime) * 100000)));
+            String point = Long.toString(endTime - startTime);
+            Log.e("score", point);
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            if (user != null) {
+                nick = user.getEmail();
+            }
+
+            if (point != null) {
+                Point p = new Point();
+                p.setPoint(point);
+                p.setid(nick);
+                myRef.push().setValue(p);
+            }
+            endGame = false;
+            Intent in = new Intent(MainActivity.this, MusicService.class);
+            startService(in);
+        }
+    }
+
+    @Override
     protected void onStop() {
+        Log.e("main", "onStop");
         super.onStop();
         SharedPreferences settings = getSharedPreferences( "myPref" , MODE_PRIVATE );
         SharedPreferences.Editor editor = settings.edit();
@@ -197,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
+        Log.e("main", "onDestroy");
         super.onDestroy();
         stopService(new Intent(this, MusicService.class));
     }
@@ -213,7 +264,14 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.startButton :
-                    showToast(MainActivity.this, "미구현");
+                    //showToast(MainActivity.this, "미구현");
+                    Intent ins = new Intent(MainActivity.this, MusicService.class);
+                    stopService(ins);
+                    startTime = System.currentTimeMillis();
+                    Log.e("startTime", Long.toString(endTime));
+                    endGame = true;
+                    Intent in = new Intent(MainActivity.this, com.NAJangwon.Kkamang.UnityPlayerActivity.class);
+                    startActivity(in);
                     break;
                 case R.id.logoutButton :
                     FirebaseAuth.getInstance().signOut();

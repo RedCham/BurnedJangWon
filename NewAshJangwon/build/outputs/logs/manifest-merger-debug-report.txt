@@ -1,0 +1,139 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+	package
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:3:5-36
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:4:5-51
+	android:versionCode
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:1-41:12
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:5:5-45
+supports-screens
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:6:3-11:35
+	android:largeScreens
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:9:7-34
+	android:smallScreens
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:7:7-34
+	android:normalScreens
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:8:7-35
+	android:xlargeScreens
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:10:7-35
+	android:anyDensity
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:11:7-32
+application
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:12:3-34:17
+	android:label
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:13:7-39
+	android:banner
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:15:7-44
+	android:isGame
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:14:7-28
+activity#com.NAJangwon.Kkamang.UnityPlayerActivity
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:16:5-30:16
+	android:screenOrientation
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:18:9-45
+	android:process
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:23:9-39
+	android:label
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:17:9-41
+	android:launchMode
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:19:9-40
+	android:hardwareAccelerated
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:21:9-44
+	android:configChanges
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:20:9-190
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:22:9-65
+intent-filter#category:name:android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:24:7-28:23
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:27:9-78
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:27:19-75
+meta-data#unityplayer.UnityActivity
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:29:7-82
+	android:value
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:29:59-79
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:29:18-58
+meta-data#unity.build-id
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:31:5-101
+	android:value
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:31:46-98
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:31:16-45
+meta-data#unity.splash-mode
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:32:5-69
+	android:value
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:32:49-66
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:32:16-48
+meta-data#unity.splash-enable
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:33:5-74
+	android:value
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:33:51-71
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:33:16-50
+uses-feature#0x00020000
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:35:3-52
+	android:glEsVersion
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:35:17-49
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:36:3-65
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:36:20-62
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:37:3-97
+	android:required
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:37:70-94
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:37:17-69
+uses-feature#android.hardware.touchscreen
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:38:3-88
+	android:required
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:38:61-85
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:38:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:39:3-99
+	android:required
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:39:72-96
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:39:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:40:3-108
+	android:required
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:40:81-105
+	android:name
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:40:17-80
+uses-sdk
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml

@@ -1,0 +1,123 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.NAJangwon.Kkamang"
+5    android:installLocation="preferExternal"
+6    android:versionCode="1"
+7    android:versionName="0.1" >
+8
+9    <uses-sdk
+10        android:minSdkVersion="26"
+10-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+11        android:targetSdkVersion="29" />
+11-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml
+12
+13    <supports-screens
+13-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:6:3-11:35
+14        android:anyDensity="true"
+14-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:11:7-32
+15        android:largeScreens="true"
+15-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:9:7-34
+16        android:normalScreens="true"
+16-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:8:7-35
+17        android:smallScreens="true"
+17-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:7:7-34
+18        android:xlargeScreens="true" />
+18-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:10:7-35
+19
+20    <uses-feature android:glEsVersion="0x00020000" />
+20-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:35:3-52
+20-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:35:17-49
+21
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:36:3-65
+22-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:36:20-62
+23
+24    <uses-feature
+24-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:37:3-97
+25        android:name="android.hardware.sensor.accelerometer"
+25-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:37:17-69
+26        android:required="false" />
+26-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:37:70-94
+27    <uses-feature
+27-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:38:3-88
+28        android:name="android.hardware.touchscreen"
+28-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:38:17-60
+29        android:required="false" />
+29-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:38:61-85
+30    <uses-feature
+30-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:39:3-99
+31        android:name="android.hardware.touchscreen.multitouch"
+31-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:39:17-71
+32        android:required="false" />
+32-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:39:72-96
+33    <uses-feature
+33-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:40:3-108
+34        android:name="android.hardware.touchscreen.multitouch.distinct"
+34-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:40:17-80
+35        android:required="false" />
+35-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:40:81-105
+36
+37    <application
+37-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:12:3-34:17
+38        android:banner="@drawable/app_banner"
+38-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:15:7-44
+39        android:isGame="true"
+39-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:14:7-28
+40        android:label="@string/app_name" >
+40-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:13:7-39
+41        <activity
+41-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:16:5-30:16
+42            android:name="com.NAJangwon.Kkamang.UnityPlayerActivity"
+42-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:22:9-65
+43            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+43-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:20:9-190
+44            android:hardwareAccelerated="false"
+44-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:21:9-44
+45            android:label="@string/app_name"
+45-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:17:9-41
+46            android:launchMode="singleTask"
+46-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:19:9-40
+47            android:process=":unityplayer"
+47-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:23:9-39
+48            android:screenOrientation="portrait" >
+48-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:18:9-45
+49            <intent-filter>
+49-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:24:7-28:23
+50
+51                <!-- <action android:name="android.intent.action.MAIN" /> -->
+52                <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+53                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+53-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:27:9-78
+53-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:27:19-75
+54            </intent-filter>
+55
+56            <meta-data
+56-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:29:7-82
+57                android:name="unityplayer.UnityActivity"
+57-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:29:18-58
+58                android:value="true" />
+58-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:29:59-79
+59        </activity>
+60
+61        <meta-data
+61-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:31:5-101
+62            android:name="unity.build-id"
+62-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:31:16-45
+63            android:value="3f542fc0-ab9e-408d-bf15-4a74812578f7" />
+63-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:31:46-98
+64        <meta-data
+64-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:32:5-69
+65            android:name="unity.splash-mode"
+65-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:32:16-48
+66            android:value="0" />
+66-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:32:49-66
+67        <meta-data
+67-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:33:5-74
+68            android:name="unity.splash-enable"
+68-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:33:16-50
+69            android:value="True" />
+69-->C:\Users\Kim SeongHyeon\AndroidStudioProjects\BurnedJangWon\NewAshJangwon\src\main\AndroidManifest.xml:33:51-71
+70    </application>
+71
+72</manifest>

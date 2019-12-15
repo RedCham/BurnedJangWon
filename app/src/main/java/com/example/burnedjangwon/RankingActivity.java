@@ -31,7 +31,7 @@ public class RankingActivity extends AppCompatActivity {
     public RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     private ArrayList<Point> chatList;
-    private String nick = "default";
+    private String nick = "de";
 
 
     private EditText pointText;

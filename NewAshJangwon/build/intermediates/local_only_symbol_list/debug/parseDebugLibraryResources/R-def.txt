@@ -1,0 +1,10 @@
+R_DEF: Internal format may change without notice
+local
+drawable app_banner
+mipmap app_icon
+mipmap app_icon_round
+string app_name
+string game_view_content_description
+style BaseUnityTheme
+style UnityThemeSelector
+style UnityThemeSelector.Translucent

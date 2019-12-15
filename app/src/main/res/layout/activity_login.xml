@@ -7,10 +7,12 @@
     android:gravity="center">
 
     <ImageView
-        android:id="@+id/textView"
-        android:layout_width="200dp"
+        android:id="@+id/mainTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/loginbutton" />
+        android:adjustViewBounds="true"
+        android:maxWidth="300dp"
+        android:background="@drawable/maintitle0"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,11 +39,12 @@
             android:inputType="textPassword" />
 
 
-        <Button
+        <ImageButton
             android:id="@+id/loginButton"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="로그인" />
+            android:background="@drawable/loginbutton"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 </LinearLayout>
